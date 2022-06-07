@@ -11,8 +11,8 @@ public class Even {
         return name;
     }
     public static String getNumber() {
-        int startOfRange = 1; //начало диапазона для рандомного числа;
-        int endOfRange = 100; //конец диапазона для рандомного числа;
+        final int startOfRange = 1; //начало диапазона для рандомного числа;
+        final int endOfRange = 100; //конец диапазона для рандомного числа;
         int c = startOfRange + (int) (Math.random() * ((endOfRange - startOfRange) + 1)); //рандомное число
         System.out.println("Question: " + c);
         String x; //переменная для записи верного ответа;
