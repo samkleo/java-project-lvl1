@@ -28,21 +28,23 @@ public class Even {
         String name = Even.greeting();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         String number = Even.getNumber();
+        System.out.print("Your answer: ");
         Scanner sc = new Scanner(System.in);
         String choiceNumber = sc.next();
         if (choiceNumber.equals(number)) {
-            System.out.println("Your answer: " + choiceNumber + "\nCorrect!");
+            System.out.println("Correct!");
             String number1 = Even.getNumber();
+            System.out.print("Your answer: ");
             Scanner sc1 = new Scanner(System.in);
             String choiceNumber1 = sc1.next();
             if (choiceNumber1.equals(number1)) {
-                System.out.println("Your answer: " + choiceNumber1 + "\nCorrect!");
+                System.out.println("Correct!");
                 String number2 = Even.getNumber();
+                System.out.print("Your answer: ");
                 Scanner sc2 = new Scanner(System.in);
                 String choiceNumber2 = sc2.next();
                 if (choiceNumber2.equals(number2)) {
-                    System.out.println("Your answer: " + choiceNumber2
-                            + "\nCorrect!" + "\nCongratulations, " + name + "!");
+                    System.out.println("Correct!" + "\nCongratulations, " + name + "!");
                 } else {
                     System.out.println("'" + choiceNumber2 + "'"
                             + " is wrong answer ;(. Correct answer was "
